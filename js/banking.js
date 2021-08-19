@@ -9,7 +9,7 @@ function inputValueCollect(input_type){
 
 function update_field (field_type,amount,isAdd){
     const current_total=document.getElementById(field_type);
-    const total_amount=parseFloat(current_total.innerText);
+    const total_amougitnt=parseFloat(current_total.innerText);
    
    if(isAdd == true){
     current_total.innerText=total_amount+amount;
@@ -35,7 +35,7 @@ document.getElementById('withdraw-button').addEventListener('click',function(){
     
     const withdraw_amount= inputValueCollect('withdraw-input')
     
-    if(withdraw_amount>0){
+    if(withdraw_amount>0 ){
         update_field('withdraw-total',withdraw_amount,true)
         update_field('balance-total',withdraw_amount,false)
     }
